@@ -9,14 +9,18 @@ public class Main {
         // сумма пополнения порог и для этих двух разных
         // сценариев рассчитываете сумму бонуса и выводите
         // на экран.
-        int schet = 100;
-        int popolnenie = 350;
+
+        // Счет
+        int account = 100;
+        // Пополнение счета
+        int replenishment = 350;
+
         int bonus = 0;
 
-        if (popolnenie > 1000) {
-            bonus = popolnenie / 100;
+        if (replenishment > 1000) {
+            bonus = replenishment / 100;
         }
-        schet = schet + popolnenie + bonus;
-        System.out.println("Итоговая сумма по Вашему счету составляет " + schet + " руб. Из них " + bonus + " руб. - бонусное начисление средств.");
+        account = account + replenishment + bonus;
+        System.out.println("Итоговая сумма по Вашему счету составляет " + account + " руб. Из них " + bonus + " руб. - бонусное начисление средств.");
     }
 }
